@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-const MONGOURL = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/agro';
+const MONGOURL = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/visits';
 mongoose.Promise = global.Promise;
 
 mongoose.connect(MONGOURL, { useNewUrlParser: true }, err => {
